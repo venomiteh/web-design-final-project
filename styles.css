@@ -44,19 +44,11 @@ body {
     background-color: dodgerblue;
     color: white;
   }
- .rightnav{
+ 
+ /*allign text to the right*/
+  .rightnav{
     float: right;
  }
- @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .header-right {
-      float: none;
-    }
-  }
  
 
 /* Style the main content area */
