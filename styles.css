@@ -16,37 +16,39 @@ body {
     color: white;
       overflow: hidden;
         background-color: #394876;
-        padding: 10px 10px;
+        padding: 0.5% 0.5%;
         border-color: gray;
         border-bottom-style:solid ;
         border-width: thin;
-        margin-bottom: -20px;
+        margin-bottom: 2%;
 
-        
-     }
+        }
     
      .header img{
 float: left;
-padding: 12px;
+padding: 1.2%;
 
      }
       
       .rightnav a {
         float: left;
+       margin-top: 0.75vh;
         color: white;
         text-align: center;
-        padding: 12px;
+        padding: 1vh;
         text-decoration: none;
-        font-size: 18px;
-        line-height: 25px;
-        border-radius: 15px;
-        margin-right: 5px;
+        font-size: 2vh;
+        line-height: 3vh;
+        border-radius: 10%;
+        margin-right: 2vh;
+        cursor: pointer;
       }
     
 /* Style the logo link*/
       .rightnav a.logo {
-        font-size: 25px;
+        font-size: 25vh;
         font-weight: bold;
+        cursor: pointer;
       }
       
       /* Change the background color on mouse-over */
@@ -70,58 +72,52 @@ padding: 12px;
 
 /* Style the main content area */
 main {
-    padding: 20px;
+    padding: 2%;
 }
 
 /* Style the featured content section */
-.featured-content {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
 
-.featured-card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.background{
-  overflow: hidden;
-  background-image:url(hero\ image\ nt.png) ;
+.hero {
+  background-image: url('hero-image-m.png');
   background-size: cover;
-  height: 980px;
-  width: 1920px;
-  margin-left: -20px;
-  margin-bottom: 50px;  
+  background-position: center;
+  height: 100vh;  /* Adjust the height as needed */
+  text-align: center;
+  color: white;
+  display: flex;
+
+ 
+ 
 }
-.background h1{
-padding-top: 400px;
-padding-left: 200px;
-width: 50%;
-font-size: 50px;
-color: #808080;
+
+.hero h1 {
+  font-size: 5vh;
+ width: 40%;
+ text-align: left;
+  color: gray;
+  margin-top: 30vh;
+  margin-left: 20vh;
+ 
+
 }
+
+
+
 
 .forum-image{
-
-
-  width: 50%;
-
+width: 50%;
 }
 
 
 .forum-ad {
   display: flex;
   align-items: center;
+  overflow: hidden;
   justify-content: space-between;
   background-color: white;
-  padding: 50px;
+  padding: 5%;
   border-style: solid;
-  border-radius: 20px;
+  border-radius: 20vh;
   border-color: grey;
 }
 
@@ -134,14 +130,13 @@ color: #808080;
 
 .forum-text {
   /* Adjust text width */
-  height: 200px;
-margin-left: -200px;
-margin-top: 10px;
+  font-size: 2vh;
+margin-left: -15%;
   /* Add any other text container styling here */
 }
 .forum-text h1 {
-font-size: x-large;
-margin-bottom: 5px;
+font-size:3vh;
+
 
 }
 .forum-text p{
@@ -154,28 +149,29 @@ margin-bottom: 5px;
   background-color: #394876;
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  margin-left: 150px;
+  padding: 1vh 2vh;
+  border-radius: 20vh;
+  cursor: pointer;
+  
 }
 
 .button:hover {
   background-color: dodgerblue;
 }
 .learning-ad {
-  margin-top: 15px;
+  margin-top: 15vh;
   overflow: hidden;
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  padding: 50px;
+  padding: 5%;
   border-style: solid;
-  border-radius: 20px;
+  border-radius: 20vh;
   border-color: grey;
 }
 
 .learning-image {
-  width: 65%; /* Adjust image width */
+  width: 60%; /* Adjust image width */
 float: right;
   height: auto;
   /* Add any other image styling here */
@@ -183,22 +179,22 @@ float: right;
 
 .learning-text {
   /* Adjust text width */
-margin-top: 250px;
-margin-left: 50px;
-width: 80%;
+  width: 100%;
+  font-size: 2vh;
+ margin-top: 20vh;
+ margin-left: 15vh;
+
+
+
 
   /* Add any other text container styling here */
 }
-.learning-text h1 {
-margin-bottom: 10px;
+.learning-text h1{
+
+  font-size:3vh
 }
-.learning-text p{
-margin-bottom: 10px;
-  width: 40%;
-}
-.learning-text a{
-  margin-right: 10px;
-}
+
+
 
 
 footer{
@@ -225,19 +221,11 @@ background-color: #394876;
     color: dodgerblue;
 }
 footer ul{
-
-
-  list-style-type: none;
-
-
-
+list-style-type: none;
 }
+
 footer h3,h4{
-
 color: white;
-
-
-
 }
 footer h4{
   margin-bottom: -15px;
@@ -246,6 +234,95 @@ footer h4{
 margin-right: -48px;
 width: 100%;
 
+}
+.container {
+  width: 50vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ margin: auto;
+ margin-top: 25vh;
+}
 
+.container form {
+  width: 100%;
+  padding: 20px;
+}
+
+.container form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.container form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #394876;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container form button:hover {
+  background-color: dodgerblue;
+}
+
+
+
+
+
+
+  .close-button {
+    position: absolute;
+    margin: auto;
+    margin-left: 40vh; 
+  }
+  .close-button a{
+    text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  }
+  .close-button a:hover{
+color: red;
+}
+
+.container p{
+  margin-bottom: 2vh;
+  color: #808080;
+}
+.container p a{
+  color: #394876;
+  margin-left: 1vh;
+}
+.container p a:hover{
+  color: dodgerblue;
+}
+#scrollToTopBtn{
+height:5vh;
+width: 5vh;
+  border-radius: 50%; 
+  color: gray; 
+  border: none; 
+  cursor: pointer;
+  position: fixed;
+  bottom: 2vh; 
+  right: 2vh; 
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+display: none;
 
 }
+
