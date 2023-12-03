@@ -15,10 +15,40 @@
                     <a href="index.html" class="active">Home</a>
                     <a href="programming-languages.html" >Learn</a>
                     <a href="forum.html">forum</a>
-                    <a href="login.html">Login</a></nav>
+                    <button onclick="showLogin(event)">Login</button></nav>
         </div>
             </header>
+           
 <main>
+     <div class="overlay" id="loginOverlay" style="display: none;">
+            
+                <div class="container">
+                
+                        <button class="remove" onclick="remove()">X</button>
+                
+                    <form>
+                        <h2>Login</h2>
+                        <input type="text" placeholder="Email or username">
+                        <input type="password" placeholder="Password">
+                       
+                        <button type="submit">Login</button>  
+                        <p>New to CodersHub?<button onclick="showregistration(event)">signup</button></p>
+                    </form>
+            
+                </div></div>
+                <div class="overlay" id="registrationOverlay" style="display: none;">
+                <div class="container">
+                    <button class="remove" onclick="remove()">X</button>
+                <form>
+                <h2>Signup</h2>
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                
+                <button type="submit">Signup</button>
+                 <p>Already on Codershub? <button onclick="showLogin(event)">login</button></p>
+            </form>
+            </div></div>
     <button id="scrollToTopBtn" onclick="scrollToTop()" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <path d="M12 2L3 12h5v8h8v-8h5L12 2zm0 6l5 5h-3v6h-4v-6H7l5-5z"/>
@@ -81,12 +111,19 @@
       <a href="#report error">Report Error</a>
       <a href="#about">About</a>
       <br><br><br><br>
-    <ul><h3>languages</h3><br>
-<li><a href="#c++">c++</a></li>
-<li><a href="#java">java</a></li>
-<li><a href="#html">html</a></li>
-<li><a href="#python">python</a></li>
-    </ul></div>
+      <div class="footer-list"> <ul><h3>languages</h3><br>
+        <li><a href="#c++">c++</a></li>
+        <li><a href="#java">java</a></li>
+        <li><a href="#html">html</a></li>
+        <li><a href="#python">python</a></li>
+            </ul>
+            <ul><h3>compilers</h3>
+          <li><a href="compilerc++.html">c++</a></li>
+          <li><a href="compilerhtml.html">html</a></li>
+          <li><a href="compilerpython.html">python</a></li>
+          <li><a href="compilerjava.html">java</a></li>
+      </ul>
+          </div></div>
     <br><br>
     <div id="socials">
         <h4>socials</h4><br>

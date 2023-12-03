@@ -12,3 +12,31 @@ window.addEventListener('scroll', function() {
     scrollToTopBtn.style.display = 'none';
   }
 });
+
+
+function showLogin(event) {
+   event.preventDefault();
+   var loginOverlay = document.getElementById("loginOverlay");
+   var registrationOverlay = document.getElementById("registrationOverlay");
+ 
+   loginOverlay.style.display = "block";
+   registrationOverlay.style.display = "none";}
+
+function showregistration(event){
+  event.preventDefault();
+  var loginOverlay = document.getElementById("loginOverlay");
+  var registrationOverlay = document.getElementById("registrationOverlay");
+
+  loginOverlay.style.display = "none";
+  registrationOverlay.style.display = "block";
+
+
+}
+function remove(){
+  var loginOverlay = document.getElementById("loginOverlay");
+  var registrationOverlay = document.getElementById("registrationOverlay");
+  loginOverlay.style.display = "none";
+  registrationOverlay.style.display = "none";
+
+
+}
