@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="proj.js"></script>
     <title>Coders Hub</title>
+
 </head>
 <body>
     <header>
@@ -55,17 +56,106 @@
                 </svg>
               </button>
         
-        
-        
-        
-        
-        <section class="forum-categories">
-            <!-- Forum categories listing goes here -->
-        </section>
+              <div class="forum-filters">
+                <h3>Forum Filters</h3>
+                <form id="filter-form">
+                    <div class="filter-section">
+                        <h4>Categories:</h4>
+                        <label><input type="checkbox" name="category" value="all"> All Categories</label>
+                        <label><input type="checkbox" name="category" value="general"> General Discussion</label>
+                        <label><input type="checkbox" name="category" value="tech"> Tech Support</label>
+                        <!-- Add more category options as needed -->
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Sort By:</h4>
+                        <label><input type="radio" name="sort" value="latest"> Latest</label>
+                        <label><input type="radio" name="sort" value="popular"> Popular</label>
+                        <label><input type="radio" name="sort" value="popular"> Recomended</label>
+                        
+                        <!-- Add more sorting options as needed -->
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Timeframe:</h4>
+                        <label><input type="radio" name="timeframe" value="all-time"> All Time</label>
+                        <label><input type="radio" name="timeframe" value="today"> Today</label>
+                        <label><input type="radio" name="timeframe" value="today"> last month</label>
+                        <!-- Add more timeframe options as needed -->
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h4>Tags:</h4>
+                        <label><input type="checkbox" name="tag" value="help">#Help</label>
+                        <label><input type="checkbox" name="tag" value="announcement">#Announcement</label>
+                        <!-- Add more tag options as needed -->
+                    </div>
+                    
+                    
+                    
+                    <button type="submit">Apply Filters</button>
+                </form>
+            </div>
+             <div class="subforms">
+             <h1>General </h3>
+                <button class="button-add" onclick="showdiscussion(event)">Start a Discussion</button>
+<br>
+             <div class="pagination">
+                <a href="#" class="page-link">1</a>
+                
 
-        <section class="forum-threads">
-            <!-- Forum threads listing goes here -->
-        </section>
+               
+              </div>
+              
+              
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Discussion Name</th>
+                        <th>Date of Creation</th>
+                        <th>Number of Replies</th>
+                        <th>Creator's Name</th>
+                      </tr>
+                    </thead>
+                    <div class="cont-body"><tbody>
+                      <tr>
+                        <td><a href="">C++ vs Python</a></td>
+                        <td>2023-01-15</td>
+                        <td>8</td>
+                        <td><a href="">3alawi</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Html 5</a></td>
+                        <td>2023-02-20</td>
+                        <td>15</td>
+                        <td><a href=""></a>abohsein</td>
+                      </tr>
+                      <!-- Add more rows as needed -->
+                    </tbody></div>
+                  </table>
+              
+            
+            </div>
+            <div class="overlay" id="adddiscOverlay" style="display: none;">
+                <button class="remove" onclick="remove()">X</button>
+            <div class="form-discussion">
+                <h2>Create a New Discussion</h2>
+                <form id="newDiscussionForm">
+                  <label for="discussionName">Discussion Name:</label>
+                  <input type="text" id="discussionName" name="discussionName" required>
+              
+                  <label for="discussionContent">Discussion Content:</label>
+                  <textarea id="discussionContent" name="discussionContent" required></textarea>
+              
+                  
+              
+                  <button type="submit">Create Discussion</button>
+                </form>
+              </div></div>
+           
+
+        
+       
     </main>
 
     <footer>
