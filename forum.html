@@ -21,7 +21,9 @@
             </header>
 
     <main>
-        <div class="overlay" id="loginOverlay" style="display: none;">
+  
+      <div class="overlay" id="loginOverlay" style="display: none;">
+          
             
                 <div class="container">
                 
@@ -56,86 +58,51 @@
                 </svg>
               </button>
         
-              <div class="forum-filters">
-                <h3>Forum Filters</h3>
-                <form id="filter-form">
-                    <div class="filter-section">
-                        <h4>Categories:</h4>
-                        <label><input type="checkbox" name="category" value="all"> All Categories</label>
-                        <label><input type="checkbox" name="category" value="general"> General Discussion</label>
-                        <label><input type="checkbox" name="category" value="tech"> Tech Support</label>
-                        <!-- Add more category options as needed -->
-                    </div>
-                    
-                    <div class="filter-section">
-                        <h4>Sort By:</h4>
-                        <label><input type="radio" name="sort" value="latest"> Latest</label>
-                        <label><input type="radio" name="sort" value="popular"> Popular</label>
-                        <label><input type="radio" name="sort" value="popular"> Recomended</label>
-                        
-                        <!-- Add more sorting options as needed -->
-                    </div>
-                    
-                    <div class="filter-section">
-                        <h4>Timeframe:</h4>
-                        <label><input type="radio" name="timeframe" value="all-time"> All Time</label>
-                        <label><input type="radio" name="timeframe" value="today"> Today</label>
-                        <label><input type="radio" name="timeframe" value="today"> last month</label>
-                        <!-- Add more timeframe options as needed -->
-                    </div>
-                    
-                    <div class="filter-section">
-                        <h4>Tags:</h4>
-                        <label><input type="checkbox" name="tag" value="help">#Help</label>
-                        <label><input type="checkbox" name="tag" value="announcement">#Announcement</label>
-                        <!-- Add more tag options as needed -->
-                    </div>
-                    
-                    
-                    
-                    <button type="submit">Apply Filters</button>
-                </form>
+             
+ <div class="Filters">
+              <h3>Sort By</h3>
+              <button onclick="active1(event)" id="active1">Popular</button>
+              <button onclick="active2(event)" id="active2">Recomended</button>
+              <button onclick="active3(event) " id="active3">New</button>
             </div>
-             <div class="subforms">
-             <h1>General </h3>
-                <button class="button-add" onclick="showdiscussion(event)">Start a Discussion</button>
-<br>
-             <div class="pagination">
-                <a href="#" class="page-link">1</a>
-                
+           
+                <div class="dropdown">
+                  <button onclick="dropdown(event)" class="dropbtn"><h3>Forum Genres</h3><svg id="arrow"  width="15" height="15" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="5,5 45,5 25,45" style="fill:black;"/>
+                  </svg></strong></button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <button>All</button>
+                    <button>Html</button>
+                    <button>java</button>
+                    <button>Python</button>
+                    <button>we</button>
+                    <button>tree</button>
+                     
+                 
+                  </div>
+                </div>
+             
+                <div class="forum-content">
+                    <h2>Discussions</h3>
+                      <button class="crt-disc" onclick="showdiscoverlay(event)">Create New Discussion</button>
+                  <section>
+                    <article class="post">
+                      <h3><a href="">C++ VS Python</a></h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor....</p>
+                      <p class="user">Posted by <a href="">User123</a> on January 1, 2023</p>
+                    </article>
+                    <article>
+                      <h3><a href="">Lorem ipsum</a></h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor....</p>
+                      <p class="user">Posted by <a href="">User345</a> on January 1, 2023</p>
+                    </article>
+</div>
 
-               
-              </div>
-              
-              
-                <table>
-                    <thead>
-                      <tr>
-                        <th>Discussion Name</th>
-                        <th>Date of Creation</th>
-                        <th>Number of Replies</th>
-                        <th>Creator's Name</th>
-                      </tr>
-                    </thead>
-                    <div class="cont-body"><tbody>
-                      <tr>
-                        <td><a href="">C++ vs Python</a></td>
-                        <td>2023-01-15</td>
-                        <td>8</td>
-                        <td><a href="">3alawi</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="">Html 5</a></td>
-                        <td>2023-02-20</td>
-                        <td>15</td>
-                        <td><a href=""></a>abohsein</td>
-                      </tr>
-                      <!-- Add more rows as needed -->
-                    </tbody></div>
-                  </table>
-              
+
+                </div>
+           
+           
             
-            </div>
             <div class="overlay" id="adddiscOverlay" style="display: none;">
                 <button class="remove" onclick="remove()">X</button>
             <div class="form-discussion">
@@ -153,7 +120,7 @@
                 </form>
               </div></div>
            
-
+             
         
        
     </main>
@@ -169,7 +136,7 @@
         <li><a href="#html">html</a></li>
         <li><a href="#python">python</a></li>
             </ul>
-            <ul><h3>compilers</h3><br>
+            <ul><h3>Compilers</h3><br>
           <li><a href="compilerc++.html">c++</a></li>
           <li><a href="compilerhtml.html">html</a></li>
           <li><a href="compilerpython.html">python</a></li>
