@@ -337,6 +337,7 @@ width: 100%;
   color: #394876;
   width: 0vh;
   padding: 1vh;
+  margin-top: -1vh;
   text-decoration: underline;
   }
   .container p button:hover{
@@ -375,10 +376,9 @@ width: 5vh;
 .card{
   background-color: #394876 ;
   vertical-align: middle;
- min-width: 40vh;
- max-width: 40vh;
+ width: 40vh;
  height: 40vh;
-  margin-left: 2vh;
+  margin-left: 3vh;
   margin-right: 20vh;
   margin-bottom: 20vh;
   padding: 1vh 1vh 1vh 1vh;
@@ -424,7 +424,7 @@ color: white;
 .card{  
 cursor: pointer;
 border-radius: 7vh;
-box-shadow: 5px 10px 20px #888888;
+box-shadow: 0.5vh 1vh 2vh #888888;
 transform: scale(1) translateZ(0);
 transition: 0.5s;
 }
@@ -571,3 +571,79 @@ padding: 1vh;
   margin-left: 1vh;
   margin-right: 1vh;
 }
+
+#adddiscOverlay{
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+ 
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: none; /* Initially hidden */
+  padding: 100vh;
+  border-radius: 8vh;
+}
+
+
+textarea{
+  resize: none;
+  margin-bottom: 1vh;
+  width: 40vh;
+  height: 20vh;
+}
+
+footer button{
+  background-color: #394876;
+  border: none;
+  color: white;
+  padding: 2vh;
+  font-size: medium;
+  margin-left: -3vh;
+}
+footer button:hover{
+  background-color: #394876;
+  color: dodgerblue;
+}
+#errorOverlay{position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: none; /* Initially hidden */
+  padding: 100vh;
+  border-radius: 8vh;}
+  
+  .container-error{
+    background-color: white;
+    width: 50vh;
+    padding: 4vh;
+    height: 50%;
+    justify-content: space-between;
+
+  }
+  .container-error h2{
+    margin-bottom: 2vh;
+  }
+  .container-error form button{
+   width: 25%;
+    padding: 1vh;
+    border: none;
+    border-radius: 1vh;
+    background-color: #394876;
+    color: #fff;
+    cursor: pointer;
+   
+  }
+  .container-error form button:hover{
+    background-color: dodgerblue;
+    transition: 0.2s;
+  }
+  .remove-err{
+    background-color: white;
+    border: none;
+    margin-left: 40vh;
+  }
+  .remove-err:hover{
+    background-color: white;
+    color: red;
+  }
