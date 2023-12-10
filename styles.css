@@ -16,16 +16,19 @@ body {
     color: white;
       overflow: hidden;
         background-color: #394876;
-        padding: 0.5% 0.5%;
-    
-        
+     
+        padding: .5% .5%;
         
 
         }
     
      .header img{
 float: left;
-padding: 1.2%;
+margin-left: 3vh;
+width: 20%;
+margin-top: -5vh;
+
+
 
      }
      .rightnav{
@@ -143,7 +146,7 @@ width: 50%;
 }
 
 .forum-image {
-  width: 70%; /* Adjust image width */
+  width: 100%; /* Adjust image width */
   float: left;
   height: auto;
   /* Add any other image styling here */
@@ -151,8 +154,10 @@ width: 50%;
 
 .forum-text {
   /* Adjust text width */
+  position: absolute;
   font-size: 2vh;
-margin-left: -15%;
+margin-left: 60%;
+width: 30%;
   /* Add any other text container styling here */
 }
 .forum-text h1 {
@@ -170,9 +175,10 @@ font-size:3vh;
   background-color: #394876;
   color: white;
   text-decoration: none;
-  padding: 1vh 2vh;
-  border-radius: 20vh;
+  padding: 1.3vh 1.3vh;
+  border-radius: 2vh;
   cursor: pointer;
+  
   
 }
 
@@ -193,7 +199,7 @@ font-size:3vh;
 }
 
 .learning-image {
-  width: 60%; /* Adjust image width */
+  width: 100%; /* Adjust image width */
 float: right;
   height: auto;
   /* Add any other image styling here */
@@ -201,10 +207,11 @@ float: right;
 
 .learning-text {
   /* Adjust text width */
-  width: 100%;
+  position: absolute;
+  width: 30%;
   font-size: 2vh;
  margin-top: 20vh;
- margin-left: 15vh;
+ margin-left: 5vh;
 
 
 
@@ -232,6 +239,14 @@ padding: 5%;
 
   margin-right: 50px;
 }
+.logo-footer img{
+  width: 25%;
+ margin-top: -7vh;
+}
+.footer-links{
+  margin-left: 1vh;
+}
+
 footer a{
 
 color: white;
@@ -255,6 +270,9 @@ list-style-type: none;
 
 footer h3,h4{
 color: white;
+}
+footer h3{
+  margin-bottom: 2vh;
 }
 footer h4{
   margin-bottom: -15px;
@@ -357,7 +375,7 @@ width: 5vh;
   right: 2vh; 
   justify-content: center;
   align-items: center;
-  background-color: transparent;
+  background-color: lightgray;
   display: none;
 
 }
@@ -604,7 +622,8 @@ footer button:hover{
   background-color: #394876;
   color: dodgerblue;
 }
-#errorOverlay{position: fixed;
+#errorOverlay{
+  position: fixed;
   top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%);
@@ -615,8 +634,9 @@ footer button:hover{
   
   .container-error{
     background-color: white;
-    width: 50vh;
-    padding: 4vh;
+    border-radius: 2vh;
+    width: 48vh;
+    padding: 4vh 4vh ;
     height: 50%;
     justify-content: space-between;
 
@@ -625,8 +645,8 @@ footer button:hover{
     margin-bottom: 2vh;
   }
   .container-error form button{
-   width: 25%;
-    padding: 1vh;
+    padding: 1vh 5vh;
+   
     border: none;
     border-radius: 1vh;
     background-color: #394876;
