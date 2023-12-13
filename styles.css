@@ -27,10 +27,10 @@ float: left;
 margin-left: 3vh;
 width: 20%;
 margin-top: -5vh;
-
-
-
      }
+
+
+     
      .rightnav{
       display: flex;
   justify-content: flex-end; /* Align items to the right */
@@ -241,7 +241,8 @@ padding: 5%;
 }
 .logo-footer img{
   width: 25%;
- margin-top: -7vh;
+
+
 }
 .footer-links{
   margin-left: 1vh;
@@ -307,15 +308,15 @@ width: 100%;
 
 .container form input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
+  padding: 1vh;
+  margin-bottom: 2vh;
   outline: none;
+  font-size: large;
 }
 
 .container form button {
   width: 100%;
-  padding: 10px;
+  padding: 1vh;
   border: none;
   border-radius: 5px;
   background-color: #394876;
@@ -326,11 +327,18 @@ width: 100%;
 .container form button:hover {
   background-color: dodgerblue;
 }
+.container form textarea{
+  width: 100%;
+  font-size: x-large;
+  padding: 1vh;
+}
+
+
 
 .remove{
   position: absolute;
     margin: auto;
-    margin-left: 42vh; 
+    margin-left: 43vh; 
     background-color: white;
     border-style: none;
 }
@@ -430,6 +438,7 @@ width: 5vh;
 .card p{
 margin-bottom: 10vh;
 color: white;
+margin-left: 1vh;
 
 
 }
@@ -438,6 +447,7 @@ color: white;
 }
 .card img{
   margin-left: 7vh;
+  margin-bottom: 7vh;
 }
 .card{  
 cursor: pointer;
@@ -452,7 +462,9 @@ transition: 0.5s;
 }
 
 .button-learn:hover{background-color:dodgerblue;
-  transition: background-color 0.5s ease;
+   color: white;
+
+ 
 
 }
 .prog-lang{
@@ -667,3 +679,123 @@ footer button:hover{
     background-color: white;
     color: red;
   }
+
+  .container-error textarea{
+    padding: 0.1vh;
+    font-size: x-large;
+  }
+
+/* For desktop screens */
+/* For desktop screens */
+@media screen and (min-width: 1024px) and (max-width:1878px) {
+  .header img {
+    width: 20%;
+    margin-left: 2vh;
+    margin-top: -5vh;
+  }
+
+.header a{
+  font-size: 5vh;
+  padding: 4vh;
+
+}
+.header button{
+  font-size: 5vh;
+}
+.card{
+font-size: 3vh;
+}
+.card img{
+  margin-bottom: 0vh;
+  width: 15%;
+}
+.overlay{
+  top: 100%; /* Center vertically */
+  left: 100%;
+}
+.container{
+  font-size: 3vh;
+  width: 100%;
+  
+}
+.container form textarea{width: 40vh;
+  font-size: 4vh;
+
+}
+.container form input{
+  width: 40vh;
+  font-size: 4vh;
+}
+
+}
+/* For tablet screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Adjustments for tablets */
+  .header img {
+    width: 20%;
+    margin-left: 2vh;
+    margin-top: -5vh;
+  }
+
+  .forum-text,
+  .learning-text {
+    position: absolute;
+    
+
+    font-size: 3vh;
+    
+  }
+  .card{
+    font-size: 3vh;
+  }
+  .card img{
+    width: 7vh;
+    margin-bottom: 0;
+    margin-left: 15vh;
+  }
+
+  /* Other tablet-specific styles */
+}
+
+/* For mobile screens */
+@media screen and (max-width: 767px) {
+  /* Adjustments for mobile devices */
+  .header img {
+    width: 35%;
+    margin-left: 1vh;
+    margin-top: -5vh;
+  }
+
+  .forum-text
+   {
+    position: absolute;
+    font-size: 2vh;
+
+  }
+  .learning-text{
+position:absolute;
+    font-size: 2vh;
+
+  }
+.forum-content{
+  margin: 0;
+  
+}
+.Filters{
+  margin: 0;
+  margin-bottom: 5vh;
+}
+.dropdown{
+  margin-bottom: 15vh;
+}
+#scrollToTopBtn{
+background-color: white;
+}
+.card{
+  font-size: 2vh;
+}
+.card img{width: 10vh;
+margin-left: 13vh;
+margin-bottom: 1vh;}
+  /* Other mobile-specific styles */
+}
