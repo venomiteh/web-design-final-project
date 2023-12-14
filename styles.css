@@ -155,13 +155,15 @@ width: 50%;
 .forum-text {
   /* Adjust text width */
   position: absolute;
-  font-size: 2vh;
+  font-size: 3vh;
 margin-left: 60%;
 width: 30%;
   /* Add any other text container styling here */
 }
 .forum-text h1 {
-font-size:3vh;
+font-size:4vh;
+width: 85%;
+
 
 
 }
@@ -209,7 +211,7 @@ float: right;
   /* Adjust text width */
   position: absolute;
   width: 30%;
-  font-size: 2vh;
+  font-size: 3vh;
  margin-top: 20vh;
  margin-left: 5vh;
 
@@ -220,7 +222,7 @@ float: right;
 }
 .learning-text h1{
 
-  font-size:3vh
+  font-size:4vh
 }
 
 
@@ -237,7 +239,7 @@ padding: 5%;
 }
 #top-footer a,img {
 
-  margin-right: 50px;
+  margin-right: 7vh;
 }
 .logo-footer img{
   width: 25%;
@@ -246,7 +248,10 @@ padding: 5%;
 }
 .footer-links{
   margin-left: 1vh;
+  margin-bottom: -5vh;
+  
 }
+
 
 footer a{
 
@@ -283,6 +288,7 @@ margin-right: -48px;
 width: 100%;
 
 }
+
 
 
 .container {
@@ -388,6 +394,7 @@ width: 5vh;
 
 }
 
+
 .overlay{
   position: fixed;
   top: 50%; /* Center vertically */
@@ -397,6 +404,7 @@ width: 5vh;
   display: none; /* Initially hidden */
   padding: 100vh;
   border-radius: 8vh;
+  z-index: 100;
 }
 
 .card{
@@ -447,7 +455,7 @@ margin-left: 1vh;
 }
 .card img{
   margin-left: 7vh;
-  margin-bottom: 7vh;
+  
 }
 .card{  
 cursor: pointer;
@@ -685,49 +693,7 @@ footer button:hover{
     font-size: x-large;
   }
 
-/* For desktop screens */
-/* For desktop screens */
-@media screen and (min-width: 1024px) and (max-width:1878px) {
-  .header img {
-    width: 20%;
-    margin-left: 2vh;
-    margin-top: -5vh;
-  }
 
-.header a{
-  font-size: 5vh;
-  padding: 4vh;
-
-}
-.header button{
-  font-size: 5vh;
-}
-.card{
-font-size: 3vh;
-}
-.card img{
-  margin-bottom: 0vh;
-  width: 15%;
-}
-.overlay{
-  top: 100%; /* Center vertically */
-  left: 100%;
-}
-.container{
-  font-size: 3vh;
-  width: 100%;
-  
-}
-.container form textarea{width: 40vh;
-  font-size: 4vh;
-
-}
-.container form input{
-  width: 40vh;
-  font-size: 4vh;
-}
-
-}
 /* For tablet screens */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* Adjustments for tablets */
@@ -798,4 +764,60 @@ background-color: white;
 margin-left: 13vh;
 margin-bottom: 1vh;}
   /* Other mobile-specific styles */
+}
+
+
+
+.html-tags {display: flex;
+  flex-wrap: row;
+  vertical-align: middle;
+  flex-flow: row wrap;
+
+}
+.html-tags div{
+  margin-left: 8vh;
+  border: .1vh solid lightgray;
+  padding: 5vh;
+  border-radius: 3vh;
+  min-width: 40%;
+  margin-bottom: 5vh;
+}
+
+.download-btn a{
+background-color: #394876;
+display: inline;
+padding: 1vh;
+border-radius: 3vh;
+color: white;
+text-decoration: none;
+float: right;
+
+}
+.download-btn{
+  margin-top: 10vh;
+}
+.download-btn i{
+  margin-right: 1vh;
+}
+
+.download{
+  border: .1vh solid lightgray;
+  padding: 3vh;
+  height: 30vh;
+margin-left: -20vh;
+text-align: center;
+margin-top: 0;
+}
+.download-btn a{
+  margin-right: 2vh;
+}
+.download-btn a:hover{
+  background-color: dodgerblue;
+}
+.path a{
+  text-decoration: none;
+  color: black;
+}
+.path a:hover{
+  color: dodgerblue;
 }
